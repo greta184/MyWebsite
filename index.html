@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel_blog</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        body {
+            background-color: bisque;
+            margin: 1rem 1rem 1rem;
+        }
+        header {
+            margin-bottom: 2rem;
+      
+        }
+        .me img {
+                width: 100%;
+                height: auto;
+            }
+            .nav {
+                background-color: rgb(155, 142, 137);
+                width: 100%;
+                display: flexbox;
+            }
+        @media screen and (max-width: 600px) {
+            }
+            
+            .card-pav img {
+                width: 100%;
+                height: auto;
+            }
+        @media screen and (min-width: 600px) {
+
+            
+            .card-pav img {
+                width: 50%;
+                height: auto;
+            }
+            .country {
+                display: flex;
+            }
+            .card-pav {
+                width: 50%;
+            }
+    
+
+        }
+
+        header:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+           <h1>My personal travel blog</h1>
+    </header>
+    <main>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Destinations</a>
+            <a href="#">Contact me</a>
+        </div>
+        <div class="me">
+            <img src="./images/women.jpg" alt="me">
+            <p>At 21, I quit my corporate job in the Philippines to pursue my dreams of traveling the world and building my own remote business. It all seemed crazy, especially because I was young and broke — but after a few months… I made it all happen!</p>
+            <p>Today, I am a successful digital nomad (online entrepreneur) and solo female traveler (+blogger and vlogger) who has been to all 7 continents.</p>
+            <p>MY MISSION? To help show YOU that no matter the odds, it is absolutely possible to create a life of non-stop travel and establish financial independence with remote work. I will help you achieve these through my no-BS experiences and learnings, along with my tried-and-tested working resources, travel tips, hacks, guides, and MORE!</p>
+        </div>
+        <div>
+            <h2>Latest post:</h2>
+            <div class="country">
+                <div class="card-pav">
+                    <p class="text1"> Italy </p>
+                    <img src="./images/italy-4093227_960_720.jpg" alt="italy">
+                    <p class="text2">Italy is one of the most popular vacation destinations in the world, and it's no wonder. However, not every Italian getaway needs to be in the hub of Florence or along the Amalfi Coast. Here, we take a look at some of the most beautiful—and under the radar—places in Italy to book your next vacation to.</p>
+                </div>    
+                <div class="card-pav">
+                    <p class="text1"> Germany </p>
+                    <img src="./images/germany.jpg" alt="Germany">
+                    <p class="text2">Germany is a beautiful, varied country with an impressive culture and endless travel opportunities, but, unfortunately, you rarely see it on top of travelers’ lists. Why and how is this happening I have no idea, but I do know that its deep forests, fairy-tale castles, and picture-perfect towns are something that you shouldn’t miss. Add to all these some excellent beer, the most beautiful Christmas Markets, and an abundance of activities, and you’ll soon wonder why in the world you haven’t visited Germany earlier.</p>
+                </div>    
+            </div>
+    </main>
+    <footer>
+        <p>
+            Mybitbybit.site &copy; 2021 All rights reserved
+        </p>
+    </footer> 
+</body>
+</html>
