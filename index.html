@@ -8,19 +8,19 @@
         * {
             box-sizing: border-box
         }
+
         body {
             background-color: bisque;
             margin: 1rem 1rem 1rem;
         }
         header {
             margin-bottom: 2rem;
-      
         }
         .me img {
                 width: 100%;
                 height: auto;
             }
-            .nav {
+            .navbar {
                 background-color: rgb(155, 142, 137);
                 width: 100%;
                 display: flexbox;
@@ -45,15 +45,52 @@
             .card-pav {
                 width: 50%;
             }
-    
-
         }
-
         header:after {
             content: "";
             clear: both;
             display: table;
         }
+        .text1 {
+            font-weight: bold;
+        }
+        .text2 {
+            padding-right: 1rem;
+        }
+        .btn {
+        background-color: rgb(170, 170, 240);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-menu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-menu a:hover {background-color:lightskyblue;}
+
+        .dropdown:hover .dropdown-menu {display: block;}
+
+        .dropdown:hover .btn {background-color:lightskyblue ;}
 
     </style>
 </head>
@@ -62,11 +99,18 @@
            <h1>My personal travel blog</h1>
     </header>
     <main>
-        <div class="nav">
-            <a href="#">Home</a>
-            <a href="#">Destinations</a>
-            <a href="#">Contact me</a>
-        </div>
+       
+        <div class="dropdown">
+            <button class="btn" >
+              Menu
+            </button>
+            <div class="dropdown-menu">
+              <a href="./index.html">Home</a>
+              <a href="#">About me</a>
+              <a href="#">Destinations</a>
+              <a href="index1.html">Contact me</a>
+            </div>
+          </div>
         <div class="me">
             <img src="./images/women.jpg" alt="me">
             <p>At 21, I quit my corporate job in the Philippines to pursue my dreams of traveling the world and building my own remote business. It all seemed crazy, especially because I was young and broke — but after a few months… I made it all happen!</p>
@@ -87,6 +131,8 @@
                     <p class="text2">Germany is a beautiful, varied country with an impressive culture and endless travel opportunities, but, unfortunately, you rarely see it on top of travelers’ lists. Why and how is this happening I have no idea, but I do know that its deep forests, fairy-tale castles, and picture-perfect towns are something that you shouldn’t miss. Add to all these some excellent beer, the most beautiful Christmas Markets, and an abundance of activities, and you’ll soon wonder why in the world you haven’t visited Germany earlier.</p>
                 </div>    
             </div>
+
+           
     </main>
     <footer>
         <p>
