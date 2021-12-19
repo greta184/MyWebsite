@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_me</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            background-color: rgb(189, 219, 219);
+        }
+       
+        .dropdown button {
+            background-color: rgb(201, 158, 194);
+            float: left;
+        } 
+        @media screen and (max-width: 600px) {
+            
+            .card-pav img {
+                width: 100%;
+                height: auto;
+            }
+            .btn {
+            background-color: rgb(170, 170, 240);
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            }
+
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+            .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+
+            .dropdown-menu a:hover {
+                background-color:lightskyblue;
+            }
+
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown:hover .btn {
+                background-color:lightskyblue ;
+            }
+            }
+        @media screen and (min-width: 600px) {
+            .btn {
+                display: none;
+            }
+            .dropdown-menu {
+                background-color: rgb(181, 150, 182);
+                display: flex;
+                justify-content: space-around;
+
+            }
+            .dropdown-menu a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+        .container {
+            position: relative;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        .text-block {
+            position: absolute;
+            background-color: rgb(83, 74, 74);
+            color: white;
+            text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+        
+        .text-block {
+            bottom: 1%;
+            right: 10%;
+            padding-left: 5%;
+            padding-right: 5%;  
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        .block {
+            height: 3rem;
+            width: 100%;
+        }
+        }
+        @media screen and (min-width: 600px) {
+        
+        .text-block {
+            bottom: 24%;
+            right: 20%;
+            padding-left: 5%;
+            padding-right: 5%;  
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 130%);
+        }
+        .block {
+            height: 3rem;
+            width: 100%;
+        }
+        }
+        
+        h3 {
+            text-align:center ;
+        }
+
+        .collapsible {
+        color: rgb(151, 84, 84);
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+        background-color: rgb(209, 171, 171);
+        }
+
+        .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        }
+        .countries button {
+            background-color: white;
+        }
+        .countries {
+            border: 1px solid purple;
+            color: rgb(214, 184, 184) ;
+        }
+        li {
+            text-decoration: none;
+            color: plum;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Melyssa Melissian:</h1>
+    </header>
+    <main>
+        <div class="dropdown">
+            <button class="btn" >
+              Menu
+            </button>
+            <div class="dropdown-menu">
+                <a href="./index.html">Home</a>
+                <a href="./about_me.html">About me</a>
+                <a href="index1.html">Contact me</a>
+            </div>
+          </div>
+        <div class="container">
+            <img src="./images/beach.jpg" alt="beach" style="width: 100%;">
+            <div class="text-block">
+                <h4>Destinations</h4>
+                <p>Where would you like to go?</p>
+            </div>
+        </div>
+        <div class="block"></div>
+        <h3>Explore by destination</h3>
+    <div class="countries">
+        <p>Click to expand</p>
+        <button type="button" class="collapsible"> 1. AFRICA</button>
+        <div class="content">
+        <ul>
+            <li><a href="#">Africa1</a> </li>
+            <li><a href="#">Africa2</a> </li>
+            <li><a href="#">Africa3</a> </li>
+            <li><a href="#">Africa4</a> </li>
+            <li><a href="#">Africa5</a> </li>
+        </ul>
+        </div>
+        <button type="button" class="collapsible"> 2. EUROPE</button>
+        <div class="content">
+        <ul>
+            <li><a href="#">Europe1</a> </li>
+            <li><a href="#">Europe2</a> </li>
+            <li><a href="#">Europe3</a> </li>
+            <li><a href="#">Europe4</a> </li>
+            <li><a href="#">Europe5</a> </li>
+            <li><a href="#">Europe6</a> </li>
+        </ul>
+        </div>
+        <button type="button" class="collapsible"> 3. AMERICA</button>
+        <div class="content">
+        <ul>
+            <li><a href="#">America1</a> </li>
+            <li><a href="#">America2</a> </li>
+            <li><a href="#">America3</a> </li>
+            <li><a href="#">America4</a> </li>
+            <li><a href="#">America5</a> </li>
+            <li><a href="#">America6</a> </li>
+        </ul>
+        </div>
+        <button type="button" class="collapsible"> 4. ASIA</button>
+        <div class="content">
+        <ul>
+            <li><a href="#">ASIA1</a> </li>
+            <li><a href="#">ASIA2</a> </li>
+            <li><a href="#">ASIA3</a> </li>
+            <li><a href="#">ASIA4</a> </li>
+            <li><a href="#">ASIA5</a> </li>
+            <li><a href="#">ASIA6</a> </li>
+        </ul>
+        </div>
+
+    </div>
+
+    <script>
+        let coll = document.getElementsByClassName("collapsible");
+        let i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+
+        </script>
+        
+    </main>
+</body>
+</html>
